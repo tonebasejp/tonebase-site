@@ -83,14 +83,15 @@ h2 .jp{display:block;font-family:var(--body);font-weight:300;font-size:clamp(18p
 
 /* services */
 .list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
-.list li{border-bottom:1px solid var(--line);display:grid;grid-template-columns:72px 1fr auto;gap:24px;align-items:baseline;padding-block:34px;transition:padding .4s cubic-bezier(.2,.8,.2,1)}
+.list li{border-bottom:1px solid var(--line);transition:padding .4s cubic-bezier(.2,.8,.2,1)}
+.list li>a{display:grid;grid-template-columns:72px 1fr auto;gap:24px;align-items:baseline;padding-block:34px}
 .list li:hover{padding-left:16px}
 .list .n{font-family:var(--display);font-weight:300;color:var(--muted);font-size:14px;letter-spacing:.2em}
 .list h3{font-family:var(--display);font-weight:500;font-size:clamp(24px,3.4vw,44px);margin:0 0 8px;text-transform:uppercase;letter-spacing:.01em}
 .list p{margin:0;color:var(--muted);font-size:15px;max-width:40em}
 .list .arrow{font-family:var(--display);font-size:28px;font-weight:300;transition:transform .4s cubic-bezier(.2,.8,.2,1)}
 .list li:hover .arrow{transform:translate(6px,-6px)}
-@media(max-width:640px){.list li{grid-template-columns:1fr;gap:6px}.list .arrow{display:none}}
+@media(max-width:640px){.list li>a{grid-template-columns:1fr;gap:6px}.list .arrow{display:none}}
 
 /* big statement */
 .statement{background:var(--bg-2);position:relative;overflow:hidden}
@@ -197,7 +198,7 @@ footer .inner{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px
 <nav class="wrap"><div class="inner">
   <a href="#top" aria-label="Tone Base"><img src="assets/logo.png" alt="Tone Base"></a>
   <button class="burger" id="burger" aria-expanded="false" aria-controls="menu">Menu</button>
-  <ul id="menu"><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#works">Results</a></li><li><a href="#flow">Flow</a></li><li><a href="company.html">Company</a></li><li><a href="contact.html">Contact</a></li></ul>
+  <ul id="menu"><li><a href="#about">About</a></li><li><a href="services.html">Services</a></li><li><a href="#works">Results</a></li><li><a href="#flow">Flow</a></li><li><a href="company.html">Company</a></li><li><a href="contact.html">Contact</a></li></ul>
 </div></nav>
 
 <header class="hero wrap" id="top">
@@ -251,10 +252,10 @@ footer .inner{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px
   <div class="r"><p class="eyebrow">Services</p>
   <h2>What we do<span class="jp">事業内容</span></h2></div>
   <ul class="list">
-    <li class="r"><span class="n">01</span><div><h3>SNS Creative &amp; 運用</h3><p>Instagram・Facebook・TikTokに特化。リール動画の企画・撮影・編集から投稿、月次のインサイト分析まで一気通貫。多言語対応で国内外にファンを創出し、来店・購買へつなげます。</p></div><span class="arrow">↗</span></li>
-    <li class="r"><span class="n">02</span><div><h3>Web Marketing</h3><p>MEO（Googleマップ上位表示）、Meta広告・Googleリスティング広告の運用代行、LP・バナー制作、予約導線のUI/UX改善。SNSで広げた認知を、確実に集客へ。</p></div><span class="arrow">↗</span></li>
-    <li class="r"><span class="n">03</span><div><h3>AIO / LLMO 対策</h3><p>ChatGPTやGeminiなどの生成AI検索で「おすすめのお店」として引用されるための次世代の検索対策。デジタルフットプリント最適化、一次情報の信頼性強化、レビューマネジメント、ブランドエンティティの確立。</p></div><span class="arrow">↗</span></li>
-    <li class="r"><span class="n">04</span><div><h3>MV &amp; Promotion</h3><p>MV・プロモーション映像・紹介動画の企画制作、海外IPの日本語ローカライズ（吹き替え・翻訳・演出）。国内外に届く映像を、企画から納品まで一貫して制作します。</p></div><span class="arrow">↗</span></li>
+    <li class="r"><a href="services.html#sns"><span class="n">01</span><div><h3>SNS Creative &amp; 運用</h3><p>Instagram・Facebook・TikTokに特化。リール動画の企画・撮影・編集から投稿、月次のインサイト分析まで一気通貫。多言語対応で国内外にファンを創出し、来店・購買へつなげます。</p></div><span class="arrow">↗</span></a></li>
+    <li class="r"><a href="services.html#web"><span class="n">02</span><div><h3>Web Marketing</h3><p>MEO（Googleマップ上位表示）、Meta広告・Googleリスティング広告の運用代行、LP・バナー制作、予約導線のUI/UX改善。SNSで広げた認知を、確実に集客へ。</p></div><span class="arrow">↗</span></a></li>
+    <li class="r"><a href="services.html#llmo"><span class="n">03</span><div><h3>AIO / LLMO 対策</h3><p>ChatGPTやGeminiなどの生成AI検索で「おすすめのお店」として引用されるための次世代の検索対策。デジタルフットプリント最適化、一次情報の信頼性強化、レビューマネジメント、ブランドエンティティの確立。</p></div><span class="arrow">↗</span></a></li>
+    <li class="r"><a href="services.html#movie"><span class="n">04</span><div><h3>MV &amp; Promotion</h3><p>MV・プロモーション映像・紹介動画の企画制作、海外IPの日本語ローカライズ（吹き替え・翻訳・演出）。国内外に届く映像を、企画から納品まで一貫して制作します。</p></div><span class="arrow">↗</span></a></li>
   </ul>
 </div></section>
 
