@@ -1,2 +1,7 @@
 [build]
   publish = "tonebase"
+
+[[redirects]]
+  from = "/ig"
+  to = "/contact.html?utm_source=instagram&utm_medium=paid&utm_campaign=llmo_2026_11&utm_content=reel_v3"
+  status = 302
